@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.maindiv{
+    height: 96vh;
+    width: 97%;
+    border: 1px solid black;
+    margin:10px auto;
+}
+h1{
+     color: white;
+    font-size: 33px;
+    font-weight: normal;
+}
+button{
+    height: 16vh;
+    background:#3498db;
+    border:0.25rem solid #3498db;
+    position: relative;
+    z-index: 1;
+
+}
+button::after{
+    border: 1px solid black;
+    background-color: red;
+    position: absolute;
+    content: "";
+    display: block;
+}
+button:hover{
+	color:rgba(15,24,240)
+}
+.left{
+    width: 25vw;
+    top: 30px;
+    left: 23px;
+    overflow: hidden;
+}
+.left::after{
+    height: 100%;
+    width: 100%;
+    left: -102%;
+    top: 0;
+    transition: 3s;
+    z-index: -1;
+}
+.left:hover::after{
+    left: 0;
+    transition:.5s;
+}
+.right{
+    top: 30px;
+    left:6.4%;
+    width: 27vw;
+}
+.right::after{
+    left: 100%;
+}
+.top{
+    top: 30px;
+    left: 12%;
+    width:23.5vw;
+}
+.top::after{
+    top: -102%;
+    left: 0;
+}
+.top:hover::after{
+    top: 0;
+}
+.bottom{
+    width:27vw;
+    top: 95px;
+}
+.bottom::after{
+    top: 100%;
+    left: 0;
+}
+.bottom:hover::after{
+    top: 0;
+}
+.box{
+    width: 17vw;
+    left: 95px;
+    top: 95px;
+}
+.box::after{
+    left: 0;
+    transform: scale(0,0);
+    transition: 0.5s;
+}
+.box:hover::after{
+    transform: scale(1,1);
+}
+.ellipse{
+    width:22vw;
+    top: 95px;
+    left: 160px;
+}
+.ellipse:after{
+    left: 0;
+    border-radius: 55%;
+    transform: scale(0,0);
+    transition: 1s;
+}
+.ellipse:hover::after{
+    transform: scale(2,2);
+}
+.forword{
+    width:32vw;
+    top: 160px;
+}
+.forword::after{
+    left: 50%;
+    top: 45%;
+    transform: skewX(-50deg);
+    transition:1s;
+    height: 0;
+    width: 0;
+    border: none;
+    transition: 3s;
+}
+.forword:hover::after{
+    height: 100%;
+    width: 100%;
+    border: 1px solid black;
+    transform: skewX(0deg);
+    top: 0;
+    left: 0;
+    transition: 0.1s;
+}
+.backword{
+    left: 90px;
+}
+.backword::after{
+    transform: skewX(50deg);
+}
+.spin{
+    top: 160px;
+    left: 158px;
+    width:18vw;
+}
+.spin::after{
+    left: 50%;
+    transform: scale(0.2,0.2);
+    transition: 0.5s;
+    transform: rotate(-90deg);
+    height: 0;
+    width: 0;
+    top: 50%;
+    border: none;    
+}
+.spin:hover::after{
+    transform: scale(1,1);
+    transform: rotate(360deg);
+    transition: 0.5s;
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    top: 0;
+    left: 0;
+}

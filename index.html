@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>After Before</title>
+    <link rel="stylesheet" href="./After Before.css">
+  </head>
+  <style>
+    .div{
+      height: 20vh;
+      width: 95%;
+      border: 3px solid red;
+      position: relative;
+      margin: auto;
+    }
+    .child{
+      height: 10vh;
+      width: 10vw;
+      position: absolute;
+      inset:0;
+      margin:auto;
+        /* border: 1px solid black; */
+        text-align: center;
+        margin-top: 20px;
+        padding-top: 20px;
+        color: transparent;
+        font-size: 100px;
+        -webkit-text-stroke: 2px black;
+    }
+  </style>
+  <body>
+    <div class="maindiv">
+      <button class="left"><h1>SLIDE FROM LEFT</h1></button>
+      <button class="left right"><h1>SLIDE FROM RIGHT</h1></button>
+      <button class="top left"><h1>SLIDE FROM TOP</h1></button>
+      <button class="left bottom"><h1>SLIDE FROM BOTTO</h1></button>
+      <button class="left box"><h1>GROW BOX</h1></button>
+      <button class="left ellipse"><h1>GROW ELLIPSE</h1></button>
+      <button class="left forword"><h1>GROW SKER FORWORD</h1></button>
+      <button class="left forword backword"><h1>GROW SKER BACKWORD</h1></button>
+      <button class="left spin"><h1>GROW SPIN</h1></button>
+
+
+    </div>
+    
+    <div class="div">
+      <div class="child">child</div>
+
+    </div>
+  </body>
+</html>
